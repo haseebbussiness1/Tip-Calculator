@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: #1a1a2e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+}
+
+.card {
+  background: #16213e;
+  border-radius: 20px;
+  padding: 40px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+h1 {
+  color: #e94560;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.field {
+  margin-bottom: 24px;
+}
+
+label {
+  display: block;
+  color: #a8b2d8;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 12px 16px;
+  background: #0f3460;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+input[type="number"]:focus {
+  border-color: #e94560;
+}
+
+.tip-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.tip-btn {
+  flex: 1;
+  padding: 10px;
+  background: #0f3460;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  color: #a8b2d8;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.tip-btn:hover {
+  border-color: #e94560;
+  color: #fff;
+}
+
+.tip-btn.active {
+  background: #e94560;
+  color: #fff;
+  border-color: #e94560;
+}
+
+.error {
+  display: block;
+  color: #e94560;
+  font-size: 12px;
+  margin-top: 6px;
+  min-height: 18px;
+}
+
+.results {
+  background: #0f3460;
+  border-radius: 14px;
+  padding: 24px;
+  margin: 30px 0;
+}
+
+.result-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  color: #a8b2d8;
+  border-bottom: 1px solid #16213e;
+}
+
+.result-row:last-child {
+  border-bottom: none;
+}
+
+.result-row span:last-child {
+  font-weight: bold;
+  color: #fff;
+  font-size: 18px;
+}
+
+.result-row.highlight span:last-child {
+  color: #e94560;
+  font-size: 22px;
+}
+
+#resetBtn {
+  width: 100%;
+  padding: 14px;
+  background: #e94560;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#resetBtn:hover {
+  background: #c73652;
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 24px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+}
