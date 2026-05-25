@@ -4,6 +4,8 @@ A simple tip calculator and bill splitter built with vanilla HTML, CSS and JavaS
 
 ## How to Run
 
+**Live URL:** https://verdant-speculoos-0674d7.netlify.app/
+
 No installation needed.
 
 1. Clone the repo:
